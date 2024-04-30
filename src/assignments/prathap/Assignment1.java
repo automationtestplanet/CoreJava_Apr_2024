@@ -28,7 +28,7 @@ public class Assignment1 {
 
 	public static void main(String[] args) {		
 		countNumOfWordsAndRepeatingCharsFromEachWord("Hello this is Java Programming");
-		System.out.println("-----------------------------------");
+		
 		
 		countNumOfWordsAndRepeatingCharsFromEachWord("Welcome to core Java Programming");
 	}
