@@ -5,7 +5,7 @@ public class Assignment1 {
 //	Write a reusable method print Even and Odd numbers from the given range
 	
 	
-    public static void reusableMethodPrintEvenAndOddNumbersFromTheGivenRange(int start, int end) {
+    public static void printEvenAndOddNumbersForGivenRange(int start, int end) {
 		System.out.println("Even numbers:");
 		for (int i = start; i <= end; i++) {
 		    if (i % 2 == 0) {
@@ -20,7 +20,7 @@ public class Assignment1 {
 		}
 	}
     public static void main(String[] args) {
-    	reusableMethodPrintEvenAndOddNumbersFromTheGivenRange(1,50); 
+    	printEvenAndOddNumbersForGivenRange(1,50); 
 	}
 }
 
