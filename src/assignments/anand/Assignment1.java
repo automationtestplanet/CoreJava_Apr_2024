@@ -7,7 +7,7 @@ public class Assignment1 {
 
 
     public static void main(String[] args) {
-        String str = "madam";
+        String str = "abcba";
         if(isPalindrome(str))
             System.out.println("Palindrome");
         else
