@@ -8,6 +8,7 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -71,7 +72,7 @@ public class InterviewQuestions {
 
 		System.out.println(map2);
 
-		List<String> fruitsList = Arrays.asList("Apple", "Banana", "Apple", "Grape", "Banana", "Apple");
+		List<String> fruitsList = Arrays.asList("Apple", "Banana", "Apple", "Grape", "Banana", "Apple",  "Grape",  "Grape",  "Grape");
 		Map<String, Long> fuitsMap = fruitsList.stream()
 				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
 
@@ -89,11 +90,15 @@ public class InterviewQuestions {
 //		Collections.reverseOrder();
 		System.out.println(list);
 		
+		System.out.println("----------------------------------------------");
 		
-//		TreeMap map = new TreeMap(Collections.reverseOrder());
-//		map.putAll(fuitsMap);
-//		
 		System.out.println(fuitsMap);
+		
+		
+		TreeMap map = new TreeMap(Collections.reverseOrder());
+		map.putAll(fuitsMap);
+		
+		System.out.println(map);
 		
 		Comparator<Map.Entry<String,Long>> compt = (o1, o2)-> {
 			if(o1.getValue() > o2.getValue())
